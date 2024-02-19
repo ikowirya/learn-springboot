@@ -1,0 +1,50 @@
+# Spring Boot
+/target/
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Maven
+log/
+target/
+spring-boot-starter-parent/target/
+spring-boot-starter/target/
+spring-boot-starter-*/target/
+
+# Gradle
+build/
+.gradle/
+!gradle-wrapper.jar
+
+# Logs
+*.log
+log/
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# IDE-specific files
+*.class
+*.DS_Store
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary Files
+*.swp
+*~
