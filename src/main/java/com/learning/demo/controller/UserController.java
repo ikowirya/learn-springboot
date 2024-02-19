@@ -1,5 +1,6 @@
 package com.learning.demo.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,11 @@ public class UserController {
     @PostMapping()
     public User createUser(@RequestBody User user) {
         return service.saveUser(user);
+    }
+
+    @GetMapping("")
+    public List<User> getAllUsers() {
+        return service.findAllUser();
     }
 
     @GetMapping("/{id}")

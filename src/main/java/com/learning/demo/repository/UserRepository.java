@@ -18,6 +18,9 @@ public class UserRepository {
         return user;
     }
 
+    public List<User> findAll() {
+        return users;
+    }
     public Optional<User> findById(Long id) {
         return users.stream()
         .filter(user -> user.getId().equals(id))

@@ -1,5 +1,6 @@
 package com.learning.demo.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,10 @@ public class UserService {
 
     public User saveUser(User user) {
         return userRepository.save(user);
+    }
+
+    public List<User> findAllUser() {
+        return userRepository.findAll();
     }
 
     public Optional<User> findUserById(Long id) {
